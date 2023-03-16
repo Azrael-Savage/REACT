@@ -2,12 +2,12 @@ import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const CustomNavbar = () => {
+export const CustomNavbar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg" className="animate__animated animate__fadeInDown">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          My Portfolio
+          <img src="/logo.png" alt="Logo" height="30" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
@@ -15,25 +15,25 @@ const CustomNavbar = () => {
             <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">
-              About
+            <Nav.Link as={Link} to="/skills">
+              Skills
             </Nav.Link>
             <Nav.Link as={Link} to="/projects">
               Projects
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact">
-              Contact
-            </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="https://discord.com/" target="_blank" rel="noopener noreferrer">
-              Discord
-            </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-              LinkedIn
+              <i className="bi bi-linkedin"></i>
             </Nav.Link>
             <Nav.Link href="https://github.com/" target="_blank" rel="noopener noreferrer">
-              GitHub
+              <i className="bi bi-github"></i>
+            </Nav.Link>
+            <Nav.Link href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+              <i className="bi bi-discord"></i>
+            </Nav.Link>
+            <Nav.Link as={Link} to="/contact">
+              Let's Connect
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -42,4 +42,3 @@ const CustomNavbar = () => {
   );
 };
 
-export default CustomNavbar;

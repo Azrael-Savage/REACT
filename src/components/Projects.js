@@ -35,33 +35,36 @@ const projectData = [
 	},
     {
 		title: "Coming Soon",
-		image: "../assets/images/comingsoon.png,
+		image: "../assets/images/comingsoon.png",
 		link: "",
 	},
 ];
 
 export const Projects = () => {
-	return (
-		<Container className="my-5 animate__animated animate__fadeIn">
-			<Row>
-				{projectData.map((project, index) => (
-					<Col key={index} md={4}>
-						<Card className="mb-4">
-							<Card.Img variant="top" src={project.image} />
-							<Card.Body>
-								<Card.Title>{project.title}</Card.Title>
-								<Card.Link
-									href={project.link}
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									View Project
-								</Card.Link>
-							</Card.Body>
-						</Card>
-					</Col>
-				))}
-			</Row>
-		</Container>
-	);
-};
+    return (
+      <Container className="my-5 animate__animated animate__fadeIn">
+        <Row>
+          {projectData.map((project, index) => (
+            <Col key={index} md={4}>
+              <Card className="mb-4 project-card">
+                <Card.Img variant="top" src={project.image} />
+                <Card.ImgOverlay className="project-overlay">
+                  <Card.Title>{project.description}</Card.Title>
+                </Card.ImgOverlay>
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Link
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </Card.Link>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    );
+  };
