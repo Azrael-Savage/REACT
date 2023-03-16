@@ -1,0 +1,30 @@
+.skills-container {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    column-count: 2;
+    column-gap: 2rem;
+  }
+  
+  .skills-list li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .floating-skills {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .floating-skills:hover {
+    transform: scale(1.1);
+  }
+  

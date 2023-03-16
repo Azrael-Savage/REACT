@@ -1,6 +1,6 @@
 .home-container {
     background: linear-gradient(45deg, #1e5799, #207cca, #2989d8, #7db9e8);
-    height: 20vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,26 +39,30 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 25vh;
+    height: 55vh;
     padding: 5rem 1rem;
     text-align: center;
+    animation: animate__fadeIn 1s;
   }
   
   .home-subtitle {
     font-size: 2rem;
     font-weight: 300;
     margin-top: 1rem;
+    animation: animate__fadeInUp 1s 0.3s both;
   }
   
   .home-title {
     font-size: 3rem;
     font-weight: 700;
+    animation: animate__fadeInDown 1s 0.3s both;
   }
   
   /* About.css */
   .about-container {
     margin: 5rem 1rem;
     text-align: justify;
+    animation: animate__fadeIn 1s;
   }
   
   
