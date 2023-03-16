@@ -14,23 +14,6 @@ export const CustomNavbar = ({ toggleTheme, theme }) => {
       fixed="top"
     >
       <Container>
-      <button className="theme-toggle" onClick={toggleTheme}>
-          {theme === "light" ? (
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/32/32971.png"
-              alt="Dark Theme"
-              width="24"
-              height="24"
-            />
-          ) : (
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/37/37284.png"
-              alt="Light Theme"
-              width="24"
-              height="24"
-            />
-          )}
-        </button>
         <Navbar.Brand href="#home">
           <img
             src={logo}
@@ -40,7 +23,9 @@ export const CustomNavbar = ({ toggleTheme, theme }) => {
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <div className="toggle-container">
+          <Navbar.Toggle aria-controls="navbar-nav" />
+        </div>
         <Navbar.Collapse id="navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
@@ -93,6 +78,23 @@ export const CustomNavbar = ({ toggleTheme, theme }) => {
               Let's Connect
             </Nav.Link>
           </Nav>
+          <button className="theme-toggle" onClick={toggleTheme}>
+            {theme === "light" ? (
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/32/32971.png"
+                alt="Dark Theme"
+                width="24"
+                height="24"
+              />
+            ) : (
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/37/37284.png"
+                alt="Light Theme"
+                width="24"
+                height="24"
+              />
+            )}
+          </button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
