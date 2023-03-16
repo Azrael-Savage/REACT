@@ -1,29 +1,24 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import logo from "../logo.svg";
 
 export const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-3 animate__animated animate__fadeInUp">
-      <Container>
-        <Row>
-          <Col>
-            <img src="/logo.svg" alt="Logo" height="30" />
-          </Col>
-          <Col className="text-end">
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="me-2">
-              <i className="bi bi-linkedin"></i>
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="me-2">
-              <i className="bi bi-github"></i>
-            </a>
-            <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-discord"></i>
-            </a>
-          </Col>
-        </Row>
-      </Container>
+    <footer className="text-center py-3 bg-dark text-white">
+      <img src={logo} alt="Logo" width="30" height="30" className="d-inline-block align-top mb-3" />
+      <p>
+        &copy; {new Date().getFullYear()} Athena King | All Rights Reserved
+      </p>
+      <div>
+        <a href="https://www.linkedin.com/in/athena-king-929a291a5" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24" height="24" className="mx-2" />
+        </a>
+        <a href="https://github.com/Azrael-Savage" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24" height="24" className="mx-2" />
+        </a>
+        <a href="https://discord.gg/N8Z8NfTd" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" width="24" height="24" className="mx-2" />
+        </a>
+      </div>
     </footer>
   );
 };
-
-

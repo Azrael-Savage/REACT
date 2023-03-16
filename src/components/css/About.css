@@ -1,0 +1,15 @@
+.about-container {
+  padding: 50px;
+  font-size: 1.25rem; /* Increase the text size */
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fade-in-slide-up 2s forwards;
+}
+
+@keyframes fade-in-slide-up {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

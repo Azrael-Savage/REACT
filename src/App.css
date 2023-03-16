@@ -1,41 +1,14 @@
-.App {
-  text-align: center;
+:root {
+  --light-background: #f0f0f0;
+  --light-text: #333;
+  --light-primary: #007bff;
+
+  --dark-background: #333;
+  --dark-text: #f0f0f0;
+  --dark-primary: #1d72c1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .project-card {
   position: relative;
 }
@@ -56,4 +29,144 @@
 
 .project-card:hover .project-overlay {
   opacity: 1;
+}
+
+/* App.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.app-container {
+  transition: background-color 0.3s ease;
+}
+
+/* App.css */
+.light {
+  background-color: var(--light-background);
+  background-image: var(--light-background-image);
+  background-size: cover;
+  background-position: center;
+  color: var(--light-text);
+}
+
+.dark {
+  background-color: var(--dark-background);
+  background-image: var(--dark-background-image);
+  background-size: cover;
+  background-position: center;
+  color: var(--dark-text);
+}
+
+
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+.animate__animated {
+  animation-duration: 3s;
+}
+/* App.css */
+.app-container {
+  background-size: cover;
+  background-position: center;
+  animation: bgZoom 60s linear infinite;
+}
+
+@keyframes bgZoom {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 120% 120%;
+  }
+}
+/* App.css */
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+  background-size: 200% 200%;
+  animation: gradient-move 10s ease infinite;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* App.css */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear, App-logo-scale infinite 2s alternate ease-in-out;
+}
+
+@keyframes App-logo-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.app-container {
+  transition: background-color 0.3s ease;
+}
+
+.light {
+  background-color: var(--light-background);
+  color: var(--light-text);
+}
+
+.dark {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: slideIn 1s ease-out;
 }
