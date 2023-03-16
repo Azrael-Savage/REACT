@@ -31,7 +31,7 @@ export const Skills = () => {
   ];
 
   return (
-    <Container className="skills-container py-5">
+    <Container id="skills" className="skills-container py-5">
       <h2 className="text-center mb-4 animate__animated animate__fadeInDown">
         Skills
       </h2>
