@@ -1,5 +1,4 @@
-# React Portfolio aka "react-portfolio-odyssey"
-
+# React Portfolio
 
 
 
