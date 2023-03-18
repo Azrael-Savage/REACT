@@ -22,7 +22,7 @@ A Personal Portfolio
 NPM INSTALL, NPM RUN START
 
 ## Usage
-NPM INSTALL, NPM RUN START to run local or go to git hub link:
+NPM INSTALL, NPM RUN START to run local or go to git hub link: https://azrael-savage.github.io/REACT/
 
 ## License
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
