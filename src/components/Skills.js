@@ -14,7 +14,7 @@ export const Skills = () => {
     "AJAX",
     "UX/UI",
     "Web Design",
-    "Logo,"
+    "Logo",
     "Team collaboration",
     "Agile development",
     "Project demonstration and storytelling",
