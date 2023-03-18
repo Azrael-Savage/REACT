@@ -190,7 +190,7 @@
       border: none;
       cursor: pointer;
       padding: 0;
-      margin-right: 5rem;
+      margin-right: 10rem;
       order: 0;
     }
     .navbar-toggler {
@@ -211,13 +211,13 @@
       order: 1;
     }
   }
-  @media(max-width: 300px){
+  @media(max-width: 493px){
     .theme-toggle {
       background: none;
       border: none;
       cursor: pointer;
       padding: 0;
-      margin-right: 5rem;
+      margin-right: 10rem;
       order: 0;
     }
     .navbar-toggler {
@@ -250,3 +250,4 @@
       order: 1;
     }
   }
+ 
