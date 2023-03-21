@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../Logo1.svg";
 
 export const Footer = () => {
 	return (
@@ -7,11 +7,11 @@ export const Footer = () => {
 			<img
 				src={logo}
 				alt="Logo"
-				width="30"
-				height="30"
+				width="100"
+				height="75"
 				className="d-inline-block align-top mb-3"
 			/>
-			<p>&copy; {new Date().getFullYear()} Athena King | All Rights Reserved</p>
+			<p>&copy; {new Date().getFullYear()} Dante King | All Rights Reserved</p>
 			<div>
 				<a
 					href="https://www.linkedin.com/in/athena-king-929a291a5"

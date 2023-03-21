@@ -50,28 +50,47 @@
   .nav-icons img:hover {
     transform: scale(1.2);
   }
-  /* Navbar.css */
-.theme-toggle {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin-right: 1rem;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  z-index: 100;
-}
-
-.theme-toggle:focus {
-  outline: none;
-}
-
-.theme-toggle img {
-  border-radius: 50%;
-  padding: 4px;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
-}
+  .theme-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+  }
+  
+  .theme-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fffbfbcf;
+    transition: 0.4s;
+  }
+  
+  .theme-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: rgba(9, 9, 9, 0.719);
+    transition: 0.4s;
+  }
+  
+  .theme-toggle-switch input:checked + .theme-toggle-slider {
+    background-color: #2196f3;
+  }
+  
+  .theme-toggle-switch input:checked + .theme-toggle-slider:before {
+    transform: translateX(24px);
+  }
+  
+  .theme-toggle-switch input {
+    display: none;
+  }
+  
 /* Navbar.css */
 .navbar {
   font-size: 1.25rem;
@@ -173,7 +192,7 @@
     border: none;
     cursor: pointer;
     padding: 0;
-    margin-right: 1rem;
+    margin-right: 10rem;
   }
   @media (max-width: 991.98px) {
     .theme-toggle {
@@ -200,12 +219,13 @@
 
   @media(max-width: 1200px){
     .theme-toggle {
-      background: none;
+      babackground: none;
       border: none;
       cursor: pointer;
       padding: 0;
       margin-right: 10rem;
       order: 0;
+      
     }
     .navbar-toggler {
       order: 1;
@@ -249,5 +269,9 @@
     .navbar-toggler {
       order: 1;
     }
+  }
+
+  .d-inline-block.align-top{
+    size: 600px;
   }
  
