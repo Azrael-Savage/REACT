@@ -33,12 +33,12 @@ export const CustomNavbar = ({ toggleTheme, theme }) => {
 						<Nav.Link href="#projects">Projects</Nav.Link>
 					</Nav>
 					<label className="theme-toggle-switch">
-  <input
+{/*   <input
     type="checkbox"
     checked={theme === "dark"}
     onChange={toggleTheme}
   />
-  <span className="theme-toggle-slider"></span>
+  <span className="theme-toggle-slider"></span> */}
 </label>
 
 					<Nav>

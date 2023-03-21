@@ -55,7 +55,7 @@ export const Skills = () => {
                 alt={`${category.title} icon`}
                 className="skill-category-icon"
               />
-              <h3 className="skill-category-title">{category.title}</h3>
+              <h3 className="skill-category-title theme-text">{category.title}</h3>
               <ul className="skill-category-list">
                 {category.skills.map((skill, idx) => (
                   <li key={idx} className="skill-item">

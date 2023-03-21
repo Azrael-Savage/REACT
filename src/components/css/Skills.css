@@ -43,6 +43,15 @@
 .skill-item {
   margin-bottom: 0.5rem;
 }
+.theme-text.light {
+  color: #000;
+}
+
+.theme-text.dark {
+  color: #fff;
+}
+
+
 
 /* Media Queries */
 @media screen and (max-width: 992px) {
