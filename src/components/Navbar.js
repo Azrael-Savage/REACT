@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./css/Navbar.css";
-import logo from "../Logo1.svg";
+import logo from "../logo.svg";
 
 export const CustomNavbar = ({ toggleTheme, theme }) => {
 	return (
@@ -70,7 +70,7 @@ export const CustomNavbar = ({ toggleTheme, theme }) => {
 								/>
 							</a>
 							<a
-								href="https://discord.gg/N8Z8NfTd"
+								href="https://discord.gg/qzSeNvDW"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
