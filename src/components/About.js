@@ -4,7 +4,7 @@ import "./css/About.css";
 export const About = () => {
 	return (
 		<div className="about-container">
-			Welcome! I'm Dante King, a software engineer, single father, and
+			Welcome! I'm Athena King, a software engineer, single parent, and
 			technology enthusiast with a strong background in web development and
 			software engineering. I'm currently pursuing my BA in Software Engineering
 			while working on various innovative projects. My diverse interests like
