@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/REACT/static/css/main.3893ecda.css",
-    "main.js": "/REACT/static/js/main.275eecb9.js",
+    "main.js": "/REACT/static/js/main.38f8cabb.js",
     "static/js/787.a2cb61a6.chunk.js": "/REACT/static/js/787.a2cb61a6.chunk.js",
     "static/media/triviaquiz.PNG": "/REACT/static/media/triviaquiz.ca9db60dd7b5f5c62b7a.PNG",
     "static/media/D&D.png": "/REACT/static/media/D&D.6fa6a5a10c7c7122ebf2.png",
     "static/media/comingsoon.png": "/REACT/static/media/comingsoon.ccad360647b235281b56.png",
     "static/media/member-app.png": "/REACT/static/media/member-app.2eb5081d6a203ec8d2c3.png",
+    "static/media/company_db.PNG": "/REACT/static/media/company_db.b1a7ad054273b3df1c75.PNG",
     "static/media/projectmanager.png": "/REACT/static/media/projectmanager.ebbf490bf74fe8e4dbfd.png",
     "static/media/workdayplanner.png": "/REACT/static/media/workdayplanner.1a2982f61ec6441112c1.png",
     "static/media/notetaker.png": "/REACT/static/media/notetaker.07f00c2508dd75112864.png",
@@ -14,11 +15,11 @@
     "static/media/Logo1.svg": "/REACT/static/media/Logo1.fe884e9a48272297e7e0a32b53d402a6.svg",
     "index.html": "/REACT/index.html",
     "main.3893ecda.css.map": "/REACT/static/css/main.3893ecda.css.map",
-    "main.275eecb9.js.map": "/REACT/static/js/main.275eecb9.js.map",
+    "main.38f8cabb.js.map": "/REACT/static/js/main.38f8cabb.js.map",
     "787.a2cb61a6.chunk.js.map": "/REACT/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3893ecda.css",
-    "static/js/main.275eecb9.js"
+    "static/js/main.38f8cabb.js"
   ]
 }
