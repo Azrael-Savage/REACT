@@ -11,7 +11,7 @@ export const Footer = () => {
 				height="75"
 				className="d-inline-block align-top mb-3"
 			/>
-			<p>&copy; {new Date().getFullYear()} Athena King | All Rights Reserved</p>
+			<p>&copy; {new Date().getFullYear()} Athena Savage | All Rights Reserved</p>
 			<div>
 				<a
 					href="https://www.linkedin.com/in/athena-king-929a291a5"
